@@ -1,0 +1,21 @@
+<p>
+  {{variable}}
+</p>
+
+
+<button (click)='load()'>
+	adasds
+</button>	
+<app-loader [isLoading]='loading' [message]='messageLoad'> </app-loader>
+
+<br>
+
+<div *ngFor="let item of matches?.nodes; let i = index" [class]=i >
+	 {{i}} .
+	 <br>
+	 {{ item.titulo1 }}
+
+	 <br>
+	 {{ item.date_full}}
+
+</div>
